@@ -52,7 +52,7 @@ public class Shop {
     private String phoneNumber;
 	
 	@Column(name = "opening_time")
-	private Time opningTime;
+	private Time openingTime;
 	
 	@Column(name = "closing_time")
 	private Time closingTime;
