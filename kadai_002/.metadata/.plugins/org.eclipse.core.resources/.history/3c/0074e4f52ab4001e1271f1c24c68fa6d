@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+ <html xmlns:th="https://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+     <head>
+         <div th:replace="~{fragment :: meta}"></div>     
+              
+         <div th:replace="~{fragment :: styles}"></div>
+         
+         <title>店舗一覧</title>       
+     </head>
+     <body>
+         <div class="samuraitravel-wrapper">
+             <!-- ヘッダー -->
+             <div th:replace="~{fragment :: header}"></div>
+             
+             <main>
+                 <div class="container pt-4 pb-5 samuraitravel-container">
+                     <div class="row justify-content-center">
+                         <div class="col-xxl-9 col-xl-10 col-lg-11">
+                             
+                             <h1 class="mb-4 text-center">店舗一覧</h1>   
+                             
+                             <div class="d-flex justify-content-end">                                
+                                 <a href="#" class="btn text-white shadow-sm mb-3 samuraitravel-btn">登録</a>
+                             </div>                                                          
+                             
+                             <table class="table">
+                                 <thead>
+                                     <tr>
+                                         <th scope="col">ID</th>
+                                         <th scope="col">民宿名</th>
+                                         <th scope="col">カテゴリー</th>
+                                         <th scope="col">郵便番号</th>
+                                         <th scope="col">住所</th>
+                                         <th scope="col">電話番号</th>
+                                         <th scope="col"></th>                                        
+                                     </tr>
+                                 </thead>   
+                                 <tbody>                                                     
+                                     <tr th:each="shop : ${shop}">
+                                         <td th:text="${shop.getId()}"></td>
+                                         <td th:text="${shop.getName()}"></td>
+                                         <td th:text="${shop.getCategory().getName()}"></td>
+                                         <td th:text="${shop.getPostalCode()}"></td>
+                                         <td th:text="${shop.getAddress()}"></td>
+                                         <td th:text="${shop.getPhoneNumber()}"></td>
+                                         <td><a th:href="@{/admin/shops/__${shop.getId()}__}">詳細</a></td>                                                                                
+                                     </tr>                                      
+                                 </tbody>
+                             </table> 
+                             <!-- ページネーション -->
+                             <div th:if="${shop.getTotalPages() > 1}" class="d-flex justify-content-center">
+                                 <nav aria-label="店舗一覧ページ">
+                                     <ul class="pagination">
+                                         <li class="page-item">
+                                             <span th:if="${shop.isFirst()}" class="page-link disabled">前</span>
+                                             <a th:unless="${shop.isFirst()}" th:href="@{/admin/shops(page = ${shop.getNumber() - 1})}" class="page-link samuraitravel-page-link">前</a>
+                                         </li>
+                                         <li th:each="i : ${#numbers.sequence(0, shop.getTotalPages() - 1)}" class="page-item">
+                                             <span th:if="${i == shop.getNumber()}" class="page-link active samuraitravel-active" th:text="${i + 1}"></span>
+                                             <a th:unless="${i == shop.getNumber()}" th:href="@{/admin/shops(page = ${i})}" class="page-link samuraitravel-page-link" th:text="${i + 1}"></a>
+                                         </li>
+                                         <li class="page-item">                        
+                                             <span th:if="${shop.isLast()}" class="page-link disabled">次</span>
+                                             <a th:unless="${shop.isLast()}" th:href="@{/admin/shops(page = ${shop.getNumber() + 1})}" class="page-link samuraitravel-page-link">次</a>
+                                         </li>
+                                     </ul>
+                                 </nav> 
+                             </div>                                      
+                         </div>
+                     </div>
+                 </div>              
+             </main>
+             
+             <!-- フッター -->
+             <div th:replace="~{fragment :: footer}"></div>
+         </div>    
+         
+         <div th:replace="~{fragment :: scripts}"></div>
+     </body>
+ </html>
