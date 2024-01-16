@@ -5,6 +5,8 @@ import java.sql.Time;
 
 import org.springframework.web.multipart.MultipartFile;
 
+import com.example.nagoyameshi.entity.Category;
+
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
@@ -20,25 +22,21 @@ public class ShopRegisterForm {
     @NotBlank(message = "説明を入力してください。")
     private String description;  
     
-    @NotBlank(message = "カテゴリを選択してください。")
-    private Integer categoryId;
+    @NotNull(message = "カテゴリを選択してください。")
+    private Category categoryId;
     
-    @NotBlank(message = "開店時間を入力してください")
+    @NotNull(message = "開店時間を入力してください")
     private Time openingTime;
     
-    @NotBlank(message = "閉店時間を入力してください")
+    @NotNull(message = "閉店時間を入力してください")
     private Time closingTime;
     
-    @NotBlank(message = "休業日を入力してください")
+    @NotNull(message = "休業日を入力してください")
     private Date holiday;
     
     @NotNull(message = "料金を入力してください。")
     @Min(value = 1, message = "料金は1円以上に設定してください。")
-    private Integer price;  
-    
-    @NotNull(message = "定員を入力してください。")
-    @Min(value = 1, message = "定員は1人以上に設定してください。")
-    private Integer capacity;     
+    private Integer price;      
     
     @NotBlank(message = "郵便番号を入力してください。")
     private String postalCode;

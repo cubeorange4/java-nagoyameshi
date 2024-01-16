@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="型 &apos;com.example.nagoyameshi.service.shopService&apos; を &apos;ShopService&apos; に名前変更します&#x0D;&#x0A;- 元のプロジェクト: &apos;nagoyameshi&apos;&#x0D;&#x0A;- オリジナル要素: &apos;com.example.nagoyameshi.service.shopService&apos;&#x0D;&#x0A;- 名前変更済み要素: &apos;com.example.nagoyameshi.service.ShopService&apos;&#x0D;&#x0A;- リファクタリングされた要素の参照を更新&#x0D;&#x0A;- コメントおよびストリング内のテキスト出現箇所の更新" description="型名 &apos;shopService&apos; を変更します" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.example.nagoyameshi.service{shopService.java[shopService" matchStrategy="1" name="ShopService" qualified="false" references="true" similarDeclarations="false" stamp="1705384513138" textual="false" version="1.0"/>
+</session>
