@@ -76,4 +76,13 @@ public class AdminShopController {
         
         return "redirect:/admin/shops";
     }
+	
+	@PostMapping("/{id}/delete")
+    public String delete(@PathVariable(name = "id") Integer id, RedirectAttributes redirectAttributes) {        
+        shopRepository.deleteById(id);
+                
+        redirectAttributes.addFlashAttribute("successMessage", "店舗を削除しました。");
+        
+        return "redirect:/admin/shops";
+    }
 }

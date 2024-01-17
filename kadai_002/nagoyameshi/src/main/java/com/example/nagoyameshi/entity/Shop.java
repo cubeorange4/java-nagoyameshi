@@ -1,6 +1,5 @@
 package com.example.nagoyameshi.entity;
 
-import java.sql.Date;
 import java.sql.Time;
 import java.sql.Timestamp;
 
@@ -40,7 +39,7 @@ public class Shop {
     private Integer price;
 	
 	@Column(name = "holiday")
-	private Date holiday;
+	private String holiday;
 	
 	@Column(name = "postal_code")
     private String postalCode;

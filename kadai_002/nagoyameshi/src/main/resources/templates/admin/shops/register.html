@@ -57,7 +57,7 @@
                                          <div th:if="${#fields.hasErrors('categoryId')}" class="text-danger small mb-2" th:errors="*{categoryId}"></div>
                                          <select class="form-control" th:field="*{categoryId}"> 
 											 <option value="">カテゴリ</option>
-											 <option th:each="category : ${category}" value="${category.getId()}" th:text="${category.getName()}"></option>
+											 <option th:each="category : ${category}" th:value="${category.getId()}" th:text="${category.getName()}"></option>
                                          </select>                               
                                      </div>                                    
                                  </div>
@@ -78,7 +78,16 @@
                                      </div> 
                                      <div class="col-md-8">
                                          <div th:if="${#fields.hasErrors('holiday')}" class="text-danger small mb-2" th:errors="*{holiday}"></div>
-                                         <input type="date" class="form-control" th:field="*{holiday}">                                
+                                         <select class="form-control" th:field="*{holiday}"> 
+											 <option value="">曜日</option>
+											 <option value="日">日</option>
+											 <option value="月">月</option>
+											 <option value="火">火</option>
+											 <option value="水">水</option>
+											 <option value="木">木</option>
+											 <option value="金">金</option>
+											 <option value="土">土</option>
+                                         </select>                               
                                      </div>                                    
                                  </div>
                                  

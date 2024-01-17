@@ -1,11 +1,6 @@
 package com.example.nagoyameshi.form;
 
-import java.sql.Date;
-import java.sql.Time;
-
 import org.springframework.web.multipart.MultipartFile;
-
-import com.example.nagoyameshi.entity.Category;
 
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
@@ -23,16 +18,16 @@ public class ShopRegisterForm {
     private String description;  
     
     @NotNull(message = "カテゴリを選択してください。")
-    private Category categoryId;
+    private Integer categoryId;
     
     @NotNull(message = "開店時間を入力してください")
-    private Time openingTime;
+    private String openingTime;
     
     @NotNull(message = "閉店時間を入力してください")
-    private Time closingTime;
+    private String closingTime;
     
-    @NotNull(message = "休業日を入力してください")
-    private Date holiday;
+    @NotNull(message = "曜日を選択してください")
+    private String holiday;
     
     @NotNull(message = "料金を入力してください。")
     @Min(value = 1, message = "料金は1円以上に設定してください。")
