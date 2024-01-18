@@ -1,5 +1,7 @@
 package com.example.nagoyameshi.entity;
 
+import java.sql.Timestamp;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,4 +21,10 @@ public class Category {
 	
 	@Column(name = "name")
 	private String name;
+	
+	@Column(name = "created_at", insertable = false, updatable = false)
+    private Timestamp createdAt;
+
+    @Column(name = "updated_at", insertable = false, updatable = false)
+    private Timestamp updatedAt;
 }

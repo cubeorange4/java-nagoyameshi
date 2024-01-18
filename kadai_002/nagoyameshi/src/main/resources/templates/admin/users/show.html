@@ -23,7 +23,17 @@
                                  </ol>
                              </nav> 
                              
-                             <h1 class="mb-3 text-center" th:text="${user.getName()}"></h1>                                                                             
+                             <h1 class="mb-3 text-center" th:text="${user.getName()}"></h1>
+                             
+                             <div class="d-flex justify-content-end align-items-end mb-3">                    
+                                 <div>
+                                     <a th:href="@{/admin/users/__${user.getId()}__/edit}">編集</a>                        
+                                 </div>
+                             </div>                                       
+                             
+                             <div th:if="${successMessage}" class="alert alert-info">
+                                 <span th:text="${successMessage}"></span>
+                             </div>                                                                             
                              
                              <div class="container mb-4">
                                  <div class="row pb-2 mb-2 border-bottom">
