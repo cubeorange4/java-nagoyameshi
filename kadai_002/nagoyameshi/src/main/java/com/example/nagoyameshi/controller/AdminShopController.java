@@ -19,6 +19,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.example.nagoyameshi.entity.Category;
 import com.example.nagoyameshi.entity.Shop;
+import com.example.nagoyameshi.form.ShopEditForm;
 import com.example.nagoyameshi.form.ShopRegisterForm;
 import com.example.nagoyameshi.repository.CategoryRepository;
 import com.example.nagoyameshi.repository.ShopRepository;
@@ -76,6 +77,14 @@ public class AdminShopController {
         
         return "redirect:/admin/shops";
     }
+	
+	@GetMapping("/{id}/edit")
+	public String edit(@PathVariable(name = "id") Integer id, Model model) {
+		Shop shop = shopRepository.getReferenceById(id);
+		String imageName = shop.getImageName();
+		ShopEditForm shopEditForm = new ShopEditForm(shop.getId(), shop.getName(), null, shop.getDescription(), shop.getCategory().getId(), shop.getOpeningTime(), shop.getClosingTime(), shop.getHoliday(), shop.getPrice(), shop.getPostalCode(), shop.getAddress(), shop.getPhoneNumber());
+		
+	}
 	
 	@PostMapping("/{id}/delete")
     public String delete(@PathVariable(name = "id") Integer id, RedirectAttributes redirectAttributes) {        

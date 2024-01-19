@@ -5,6 +5,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.sql.Time;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.UUID;
 
 import org.springframework.stereotype.Service;
@@ -34,8 +36,16 @@ public class ShopService {
 		
         Integer categoryId = Integer.valueOf(shopRegisterForm.getCategoryId());
         Category category = categoryRepository.getReferenceById(categoryId);
-		Time openingTime = Time.valueOf(shopRegisterForm.getOpeningTime());
-		Time closingTime = Time.valueOf(shopRegisterForm.getClosingTime());
+		//Time openingTime = Time.valueOf(shopRegisterForm.getOpeningTime());
+		//Time closingTime = Time.valueOf(shopRegisterForm.getClosingTime());
+        
+     // 開店時間と閉店時間の変換
+        LocalTime localOpeningTime = LocalTime.parse(shopRegisterForm.getOpeningTime(), DateTimeFormatter.ofPattern("HH:mm"));
+        LocalTime localClosingTime = LocalTime.parse(shopRegisterForm.getClosingTime(), DateTimeFormatter.ofPattern("HH:mm"));
+
+        // LocalTimeからTimeに変換
+        Time openingTime = Time.valueOf(localOpeningTime);
+        Time closingTime = Time.valueOf(localClosingTime);
         
         if (!imageFile.isEmpty()) {
             String imageName = imageFile.getOriginalFilename(); 

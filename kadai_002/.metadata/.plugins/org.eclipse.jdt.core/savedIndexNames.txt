@@ -14,7 +14,6 @@ INDEX VERSION 1.134+C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai
 782458348.index
 4086003569.index
 961343731.index
-1461014136.index
 2339322222.index
 2806253054.index
 2403393036.index

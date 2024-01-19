@@ -1,0 +1,58 @@
+package com.example.nagoyameshi.controller;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import com.example.nagoyameshi.entity.Category;
+import com.example.nagoyameshi.form.CategoryRegisterForm;
+import com.example.nagoyameshi.repository.CategoryRepository;
+import com.example.nagoyameshi.service.CategoryService;
+
+@Controller
+@RequestMapping("/admin/category")
+public class CategoryController {
+	private final CategoryRepository categoryRepository;
+	private final CategoryService categoryService;
+	
+	public CategoryController(CategoryRepository categoryRepository, CategoryService categoryService){
+		this.categoryRepository = categoryRepository;
+		this.categoryService = categoryService;
+	}
+	
+	@GetMapping
+	public String index(Model model) {
+		List<Category> category = categoryRepository.findAll();
+		
+		model.addAttribute("category", category);
+		
+		return "admin/category/index";
+	}
+	
+	@GetMapping("/register")
+	public String register(Model model) {
+		model.addAttribute("categoryRegisterForm", new CategoryRegisterForm());
+		
+		return "admin/category/register";
+	}
+	
+	@GetMapping("/create")
+	public String create(@ModelAttribute @Validated CategoryRegisterForm categoryRegisterForm, BindingResult bindingResult, RedirectAttributes redirectAttributes) {
+		if(bindingResult.hasErrors()) {
+			return "admin/category/register";
+		}
+		
+		categoryService.create(categoryRegisterForm);
+		redirectAttributes.addFlashAttribute("successMessage", "カテゴリを登録しました。");
+		
+		return "redirect;/admin/category";
+	}
+	
+}

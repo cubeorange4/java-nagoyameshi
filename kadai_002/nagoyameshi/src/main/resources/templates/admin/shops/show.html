@@ -93,7 +93,7 @@
                                      </div>
              
                                      <div class="col">
-                                         <span th:text="${#dates.format(shop.getHoliday, 'MM')} + 月 + ${#dates.format(shop.getHoliday, 'dd')} + 日"></span>
+                                         <span th:text="${shop.getHoliday()}+曜日"></span>
                                      </div>
                                  </div>                     
              
