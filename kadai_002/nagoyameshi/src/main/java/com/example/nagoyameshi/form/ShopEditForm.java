@@ -1,5 +1,7 @@
 package com.example.nagoyameshi.form;
 
+import java.sql.Time;
+
 import org.springframework.web.multipart.MultipartFile;
 
 import jakarta.validation.constraints.Min;
@@ -11,6 +13,11 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class ShopEditForm {
+	public ShopEditForm(Integer id2, String name2, Object imageFile2, String description2, Integer id3,
+			Time openingTime2, Time closingTime2, String holiday2, Integer price2, String postalCode2, String address2,
+			String phoneNumber2) {
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
 	@NotNull
 	private Integer id;
 	

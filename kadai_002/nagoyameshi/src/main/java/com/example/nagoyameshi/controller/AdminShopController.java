@@ -80,10 +80,15 @@ public class AdminShopController {
 	
 	@GetMapping("/{id}/edit")
 	public String edit(@PathVariable(name = "id") Integer id, Model model) {
+		
 		Shop shop = shopRepository.getReferenceById(id);
 		String imageName = shop.getImageName();
 		ShopEditForm shopEditForm = new ShopEditForm(shop.getId(), shop.getName(), null, shop.getDescription(), shop.getCategory().getId(), shop.getOpeningTime(), shop.getClosingTime(), shop.getHoliday(), shop.getPrice(), shop.getPostalCode(), shop.getAddress(), shop.getPhoneNumber());
 		
+		model.addAttribute("imageName", imageName);
+		model.addAttribute("shopEditForm", shopEditForm);
+		
+		return "admin/shops/edit";
 	}
 	
 	@PostMapping("/{id}/delete")
