@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+ <html xmlns:th="https://www.thymeleaf.org">
+     <head>
+         <div th:replace="~{fragment :: meta}"></div>   
+              
+         <div th:replace="~{fragment :: styles}"></div>
+         
+         <title>店舗一覧</title>       
+     </head>
+     <body>
+         <div class="samuraitravel-wrapper">
+             <!-- ヘッダー -->
+             <div th:replace="~{fragment :: header}"></div>
+             
+             <main>
+                 <div class="container pb-5 samuraitravel-container">
+                     <div class="row justify-content-center">
+                             <nav class="mb-4" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                 <ol class="breadcrumb mb-0"> 
+                                     <li class="breadcrumb-item"><a th:href="@{/}">ホーム</a></li>                                                           
+                                     <li class="breadcrumb-item active" aria-current="page">店舗一覧</li>
+                                 </ol>
+                             </nav> 
+                             
+                             <div class="card mb-3">
+                                 <div class="card-header">
+                                     予算から探す
+                                 </div>
+                                 <div class="card-body">
+                                     <form method="get" th:action="@{/shops}" class="w-100">
+                                         <div class="form-group mb-3">    
+                                             <select class="form-control form-select" name="price">
+                                                 <option value="" hidden>選択してください</option> 
+                                                 <option value="1000" th:selected="${price == 1000}">1,000円以内</option>
+                                                 <option value="1500" th:selected="${price == 1500}">1,500円以内</option>
+                                                 <option value="2000" th:selected="${price == 2000}">2,500円以内</option>
+                                                 <option value="3000" th:selected="${price == 3000}">3,000円以内</option>
+                                                 <option value="5000" th:selected="${price == 5000}">5,000円以内</option>
+                                             </select>                                                                                
+                                         </div>
+                                         <div class="form-group">
+                                             <button type="submit" class="btn text-white shadow-sm w-100 samuraitravel-btn">検索</button>
+                                         </div>                                           
+                                     </form>
+                                 </div>
+                             </div>
+                             
+                             <div class="mb-3" th:each="house : ${housePage}">
+                                 <a th:href="@{/houses/__${house.getId()}__}" class="link-dark samuraitravel-card-link">
+                                     <div class="card h-100">   
+                                         <div class="row g-0">
+                                             <div class="col-md-4">                                                                                
+                                                 <img th:if="${house.getImageName()}" th:src="@{/storage/__${house.getImageName()}__}" class="card-img-top samuraitravel-horizontal-card-image" alt="店舗画像">                                                     
+                                                 <img th:unless="${house.getImageName()}" th:src="@{/images/noImage.png}" class="card-img-top samuraitravel-horizontal-card-image" alt="NO IMAGE">                                                    
+                                             </div> 
+                                             <div class="col-md-8">                                                                                                                        
+                                                 <div class="card-body">                                    
+                                                     <h3 class="card-title mb-3" th:text="${house.getName()}"></h3>                                            
+  
+                                                     <hr class="mb-3">
+                                                     
+                                                     <p class="card-text mb-2">
+                                                         <span th:text="${house.getDescription()}"></span>
+                                                     </p>                                                    
+                                                     
+                                                     <p class="card-text mb-2">
+                                                         <small class="text-muted" th:text="${'〒' + house.getPostalCode()}"></small>
+                                                         <small class="text-muted" th:text="${house.getAddress()}"></small>                                                      
+                                                     </p>   
+                                                                                                                                                                                                                                    
+                                                     <p class="card-text">
+                                                         <span th:text="${#numbers.formatInteger(house.getPrice(), 1, 'COMMA') + '円 / 泊'}"></span>
+                                                     </p>                                    
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>    
+                                 </a>            
+                             </div>
+                     </div>
+                 </div>                
+             </main>
+             
+             <!-- フッター -->
+             <div th:replace="~{fragment :: footer}"></div>
+         </div>    
+         
+         <div th:replace="~{fragment :: scripts}"></div>  
+         <script th:src="@{/js/preview.js}"></script>     
+     </body>
+ </html>

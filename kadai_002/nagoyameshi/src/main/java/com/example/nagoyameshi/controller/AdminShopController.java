@@ -80,11 +80,12 @@ public class AdminShopController {
 	
 	@GetMapping("/{id}/edit")
 	public String edit(@PathVariable(name = "id") Integer id, Model model) {
-		
+		List<Category> category = categoryRepository.findAll();
 		Shop shop = shopRepository.getReferenceById(id);
 		String imageName = shop.getImageName();
 		ShopEditForm shopEditForm = new ShopEditForm(shop.getId(), shop.getName(), null, shop.getDescription(), shop.getCategory().getId(), shop.getOpeningTime(), shop.getClosingTime(), shop.getHoliday(), shop.getPrice(), shop.getPostalCode(), shop.getAddress(), shop.getPhoneNumber());
 		
+		model.addAttribute("category", category);
 		model.addAttribute("imageName", imageName);
 		model.addAttribute("shopEditForm", shopEditForm);
 		
@@ -98,5 +99,17 @@ public class AdminShopController {
         redirectAttributes.addFlashAttribute("successMessage", "店舗を削除しました。");
         
         return "redirect:/admin/shops";
+    }
+	
+	@PostMapping("/{id}/update")
+    public String update(@ModelAttribute @Validated ShopEditForm shopEditForm, BindingResult bindingResult, RedirectAttributes redirectAttributes) {        
+        if (bindingResult.hasErrors()) {
+            return "admin/houses/edit";
+        }
+        
+        shopService.update(shopEditForm);
+        redirectAttributes.addFlashAttribute("successMessage", "民宿情報を編集しました。");
+        
+        return "redirect:/admin/houses";
     }
 }

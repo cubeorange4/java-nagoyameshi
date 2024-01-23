@@ -38,16 +38,17 @@
                                  
                                  <div class="form-group row mb-3">
                                      <div class="col-md-4">
-                                         <label for="imageFile" class="col-form-label text-md-left fw-bold">店舗画像</label>
+                                         <label for="imageName" class="col-form-label text-md-left fw-bold">店舗画像</label>
                                      </div>                                    
                                      <div class="col-md-8">
-                                         <div th:if="${#fields.hasErrors('imageFile')}" class="text-danger small mb-2" th:errors="*{imageFile}"></div>  
-                                         <input type="file" class="form-control" th:field="*{imageFile}">
+                                         <div th:if="${#fields.hasErrors('imageName')}" class="text-danger small mb-2" th:errors="*{imageName}"></div>  
+                                         <input type="file" class="form-control" th:field="*{imageName}">
                                      </div>
                                  </div>   
                                  
-                                 <!-- 選択された画像の表示場所 -->
-                                 <div class="row" id="imagePreview"></div>                                 
+                                 <!-- 選択された画像の表示場所 -->                                 
+                                 <div th:if="${imageName}" class="row" id="imagePreview"><img th:src="@{/storage/__${imageName}__}" class="mb-3"></div>
+                                 <div th:unless="${imageName}" class="row" id="imagePreview"></div>                                
                                  
                                  <div class="form-group row mb-3">
                                      <div class="col-md-4">
