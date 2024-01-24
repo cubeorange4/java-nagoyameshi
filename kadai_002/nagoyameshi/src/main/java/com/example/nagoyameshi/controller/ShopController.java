@@ -9,11 +9,13 @@ import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.nagoyameshi.entity.Category;
 import com.example.nagoyameshi.entity.Shop;
+import com.example.nagoyameshi.form.ReservationInputForm;
 import com.example.nagoyameshi.repository.CategoryRepository;
 import com.example.nagoyameshi.repository.ShopRepository;
 
@@ -52,4 +54,14 @@ public class ShopController {
 		
 		return "shops/index";
 	}
+	
+	@GetMapping("/{id}")
+    public String show(@PathVariable(name = "id") Integer id, Model model) {
+        Shop shop = shopRepository.getReferenceById(id);
+        
+        model.addAttribute("reservationInputForm", new ReservationInputForm());
+        model.addAttribute("shop", shop);         
+        
+        return "shops/show";
+    }
 }

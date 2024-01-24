@@ -1,0 +1,9 @@
+let maxDate = new Date();
+ maxDate = maxDate.setMonth(maxDate.getMonth() + 3);
+ minDate = minDate.setDate(minDate.getDate() + 1);
+ 
+ flatpickr('#fromCheckinDate', {
+   locale: 'ja',
+   minDate: minDate,
+   maxDate: maxDate
+ });

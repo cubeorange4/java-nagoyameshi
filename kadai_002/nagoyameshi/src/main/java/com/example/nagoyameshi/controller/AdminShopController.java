@@ -110,6 +110,6 @@ public class AdminShopController {
         shopService.update(shopEditForm);
         redirectAttributes.addFlashAttribute("successMessage", "民宿情報を編集しました。");
         
-        return "redirect:/admin/houses";
+        return "redirect:/admin/shops";
     }
 }

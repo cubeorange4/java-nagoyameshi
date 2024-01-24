@@ -84,8 +84,8 @@ MultipartFile imageFile = shopEditForm.getImageName();
 		//Time closingTime = Time.valueOf(shopRegisterForm.getClosingTime());
         
      // 開店時間と閉店時間の変換
-        LocalTime localOpeningTime = LocalTime.parse(shopEditForm.getOpeningTime(), DateTimeFormatter.ofPattern("HH:mm"));
-        LocalTime localClosingTime = LocalTime.parse(shopEditForm.getClosingTime(), DateTimeFormatter.ofPattern("HH:mm"));
+        LocalTime localOpeningTime = LocalTime.parse(shopEditForm.getOpeningTime().toString(), DateTimeFormatter.ofPattern("HH:mm:ss"));
+        LocalTime localClosingTime = LocalTime.parse(shopEditForm.getClosingTime().toString(), DateTimeFormatter.ofPattern("HH:mm:ss"));
 
         // LocalTimeからTimeに変換
         Time openingTime = Time.valueOf(localOpeningTime);
