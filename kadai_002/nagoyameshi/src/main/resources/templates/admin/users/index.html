@@ -38,7 +38,8 @@
                                          <th scope="col">ID</th>
                                          <th scope="col">氏名</th>
                                          <th scope="col">フリガナ</th>
-                                         <th scope="col">メールアドレス</th>                                        
+                                         <th scope="col">メールアドレス</th>  
+                                         <th scope="col">会員クラス</th>                                      
                                          <th scope="col"></th>
                                      </tr>
                                  </thead>   
@@ -48,6 +49,7 @@
                                          <td th:text="${user.getName()}"></td>
                                          <td th:text="${user.getFurigana()}"></td>
                                          <td th:text="${user.getEmail()}"></td>
+                                         <td th:text="${user.getRole().getName()}"></td>
                                          <td><a th:href="@{/admin/users/__${user.getId()}__}">詳細</a></td>                                                                                
                                      </tr>                                      
                                  </tbody>

@@ -14,20 +14,29 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.nagoyameshi.entity.Category;
+import com.example.nagoyameshi.entity.Favorite;
 import com.example.nagoyameshi.entity.Shop;
+import com.example.nagoyameshi.entity.User;
 import com.example.nagoyameshi.form.ReservationInputForm;
 import com.example.nagoyameshi.repository.CategoryRepository;
+import com.example.nagoyameshi.repository.FavoriteRepository;
 import com.example.nagoyameshi.repository.ShopRepository;
+import com.example.nagoyameshi.security.UserDetailsImpl;
+import com.example.nagoyameshi.service.FavoriteService;
 
 @Controller
 @RequestMapping("/shops")
 public class ShopController {
 	private final ShopRepository shopRepository;
 	private final CategoryRepository categoryRepository;
+	private final FavoriteRepository favoriteRepository;
+	private final FavoriteService favoriteService;
 	
-	public ShopController(ShopRepository shopRepository, CategoryRepository categoryRepository) {
+	public ShopController(ShopRepository shopRepository, CategoryRepository categoryRepository, FavoriteRepository favoriteRepository, FavoriteService favoriteService) {
 		this.shopRepository = shopRepository;
 		this.categoryRepository = categoryRepository;
+		this.favoriteRepository = favoriteRepository;
+		this.favoriteService = favoriteService;
 	}
 	
 	@GetMapping
@@ -56,11 +65,23 @@ public class ShopController {
 	}
 	
 	@GetMapping("/{id}")
-    public String show(@PathVariable(name = "id") Integer id, Model model) {
+    public String show(@PathVariable(name = "id") Integer id, Model model, UserDetailsImpl userDetailsImpl) {
         Shop shop = shopRepository.getReferenceById(id);
+        Favorite favorite = null;
+        boolean isFavorite = false;
+        
+        if(userDetailsImpl != null) {
+        	User user = userDetailsImpl.getUser();
+        	isFavorite = favoriteService.isFavorite(shop, user);
+        	if(isFavorite) {
+        		favorite = favoriteRepository.findByShopAndUser(shop, user);
+        	}
+        }
         
         model.addAttribute("reservationInputForm", new ReservationInputForm());
-        model.addAttribute("shop", shop);         
+        model.addAttribute("favorite", favorite);
+        model.addAttribute("shop", shop);        
+        model.addAttribute("isFavorite", isFavorite);
         
         return "shops/show";
     }

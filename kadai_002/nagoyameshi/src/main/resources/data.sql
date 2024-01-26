@@ -75,3 +75,16 @@ INSERT IGNORE INTO reservations (id, shop_id, user_id, checkin_date, checkin_tim
 INSERT IGNORE INTO reservations (id, shop_id, user_id, checkin_date, checkin_time, number_of_people ) VALUES (9, 9, 1, '2023-04-01', '12:00', 5);
 INSERT IGNORE INTO reservations (id, shop_id, user_id, checkin_date, checkin_time, number_of_people ) VALUES (10, 10, 1, '2023-04-01', '12:00', 6);
 INSERT IGNORE INTO reservations (id, shop_id, user_id, checkin_date, checkin_time, number_of_people ) VALUES (11, 11, 1, '2023-04-01', '12:00', 2);
+
+INSERT IGNORE INTO favorites (id, shop_id, user_id) VALUES (1, 1, 1);
+INSERT IGNORE INTO favorites (id, shop_id, user_id) VALUES (2, 2, 1);
+INSERT IGNORE INTO favorites (id, shop_id, user_id) VALUES (3, 3, 1);
+INSERT IGNORE INTO favorites (id, shop_id, user_id) VALUES (4, 4, 1);
+INSERT IGNORE INTO favorites (id, shop_id, user_id) VALUES (5, 5, 1);
+INSERT IGNORE INTO favorites (id, shop_id, user_id) VALUES (6, 6, 1);
+INSERT IGNORE INTO favorites (id, shop_id, user_id) VALUES (7, 7, 1);
+INSERT IGNORE INTO favorites (id, shop_id, user_id) VALUES (8, 8, 1);
+INSERT IGNORE INTO favorites (id, shop_id, user_id) VALUES (9, 9, 1);
+INSERT IGNORE INTO favorites (id, shop_id, user_id) VALUES (10, 10, 1);
+INSERT IGNORE INTO favorites (id, shop_id, user_id) VALUES (11, 11, 1);
+INSERT IGNORE INTO favorites (id, shop_id, user_id) VALUES (12, 12, 1);

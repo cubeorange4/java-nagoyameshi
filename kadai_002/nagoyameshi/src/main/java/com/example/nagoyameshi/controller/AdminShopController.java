@@ -104,7 +104,7 @@ public class AdminShopController {
 	@PostMapping("/{id}/update")
     public String update(@ModelAttribute @Validated ShopEditForm shopEditForm, BindingResult bindingResult, RedirectAttributes redirectAttributes) {        
         if (bindingResult.hasErrors()) {
-            return "admin/houses/edit";
+            return "admin/shops/edit";
         }
         
         shopService.update(shopEditForm);

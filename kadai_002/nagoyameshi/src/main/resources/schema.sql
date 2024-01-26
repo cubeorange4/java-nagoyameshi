@@ -64,3 +64,14 @@ CREATE TABLE IF NOT EXISTS shop (
      FOREIGN KEY (shop_id) REFERENCES shop (id),
      FOREIGN KEY (user_id) REFERENCES users (id)
  );
+ 
+ CREATE TABLE IF NOT EXISTS favorites (
+     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+     shop_id INT NOT NULL,
+     user_id INT NOT NULL,    
+     created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+     updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+     UNIQUE (shop_id, user_id),
+     FOREIGN KEY (shop_id) REFERENCES shop (id),
+     FOREIGN KEY (user_id) REFERENCES users (id)  
+ );
