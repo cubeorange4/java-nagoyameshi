@@ -1899,3 +1899,180 @@
 2024-01-26 11:40:37,097 [Worker-922: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-01-26 11:40:37,105 [Worker-922: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
 2024-01-26 12:04:22,321 [Worker-933: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-26 12:04:22,352 [Worker-933: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-26 12:04:22,387 [Worker-933: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 12:42:06,372 [Worker-952: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-27 12:42:06,396 [Worker-952: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 12:42:06,410 [Worker-952: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 12:43:39,655 [Worker-956: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-27 12:43:39,666 [Worker-956: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 12:43:39,678 [Worker-956: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 12:44:51,127 [Worker-953: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 12:44:51,183 [Worker-953: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 12:44:51,222 [Worker-953: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 13:14:07,223 [Worker-961: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 13:14:07,249 [Worker-961: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 13:14:07,281 [Worker-961: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 13:16:11,240 [Worker-962: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 13:16:11,255 [Worker-962: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 13:16:11,284 [Worker-962: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 13:16:31,341 [Worker-960: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 13:16:31,361 [Worker-960: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 13:16:31,409 [Worker-960: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 13:18:30,676 [Worker-960: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 13:18:30,698 [Worker-960: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 13:18:30,730 [Worker-960: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 13:18:35,074 [Worker-963: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 13:18:35,104 [Worker-963: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 13:18:35,141 [Worker-963: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 13:19:31,923 [Worker-963: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 13:19:31,937 [Worker-963: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 13:19:31,959 [Worker-963: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 13:20:20,018 [Worker-962: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 13:20:20,037 [Worker-962: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 13:20:20,071 [Worker-962: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 16:46:47,736 [Worker-961: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 16:46:47,758 [Worker-961: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 16:46:47,794 [Worker-961: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 16:47:38,015 [Worker-965: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 16:47:38,031 [Worker-965: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 16:47:38,072 [Worker-965: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 16:47:42,178 [Worker-960: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 16:47:42,195 [Worker-960: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 16:47:42,221 [Worker-960: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 16:48:39,574 [Worker-967: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 16:48:39,594 [Worker-967: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 16:48:39,628 [Worker-967: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 16:48:52,536 [Worker-961: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 16:48:52,808 [Worker-961: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 16:48:52,840 [Worker-961: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 16:49:59,129 [Worker-965: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 16:49:59,150 [Worker-965: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 16:49:59,175 [Worker-965: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 16:51:31,835 [Worker-968: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 16:51:31,851 [Worker-968: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 16:51:31,883 [Worker-968: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 17:00:22,854 [Worker-969: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 17:00:22,883 [Worker-969: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 17:00:22,912 [Worker-969: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 17:00:40,026 [Worker-973: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 17:00:40,053 [Worker-973: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 17:00:40,078 [Worker-973: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 17:01:47,046 [Worker-969: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 17:01:47,073 [Worker-969: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 17:01:47,101 [Worker-969: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 17:02:05,091 [Worker-972: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 17:02:05,117 [Worker-972: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 17:02:05,151 [Worker-972: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 17:07:50,655 [Worker-975: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 17:07:50,682 [Worker-975: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 17:07:50,720 [Worker-975: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 17:34:02,179 [Worker-968: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 17:34:02,203 [Worker-968: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 17:34:02,250 [Worker-968: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 17:36:25,433 [Worker-978: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 17:36:25,462 [Worker-978: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 30 resources from src\main\resources to target\classes
+2024-01-27 17:36:25,495 [Worker-978: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 17:37:06,862 [Worker-982: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-27 17:37:06,874 [Worker-982: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 17:37:06,886 [Worker-982: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 17:42:47,861 [Worker-987: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-27 17:42:47,872 [Worker-987: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 17:42:47,881 [Worker-987: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 17:55:01,064 [Worker-990: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-27 17:55:01,075 [Worker-990: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 17:55:01,085 [Worker-990: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 17:57:46,348 [Worker-985: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-27 17:57:46,360 [Worker-985: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 17:57:46,371 [Worker-985: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 18:03:19,420 [Worker-996: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-27 18:03:19,430 [Worker-996: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 18:03:19,440 [Worker-996: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-27 18:03:22,712 [Worker-989: nagoyameshi - NagoyameshiApplication の起動] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-27 18:03:23,024 [Worker-989: nagoyameshi - NagoyameshiApplication の起動] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 31 resources from src\main\resources to target\classes
+2024-01-27 18:03:23,070 [Worker-989: nagoyameshi - NagoyameshiApplication の起動] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:26:33,934 [Worker-1014: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:26:33,949 [Worker-1014: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 08:26:33,961 [Worker-1014: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:27:01,609 [Worker-1015: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:27:01,623 [Worker-1015: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:27:01,630 [Worker-1015: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:27:09,853 [Worker-1015: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:27:09,866 [Worker-1015: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 08:27:09,874 [Worker-1015: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:27:24,672 [Worker-1013: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:27:24,711 [Worker-1013: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:27:24,720 [Worker-1013: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:27:34,216 [Worker-1005: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:27:34,231 [Worker-1005: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 08:27:34,267 [Worker-1005: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:28:42,100 [Worker-1010: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:28:42,111 [Worker-1010: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 08:28:42,131 [Worker-1010: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:28:54,316 [Worker-1013: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:28:54,330 [Worker-1013: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 08:28:54,339 [Worker-1013: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:29:58,059 [Worker-1014: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:29:58,089 [Worker-1014: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 08:29:58,099 [Worker-1014: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:37:50,968 [Worker-1018: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:37:50,979 [Worker-1018: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 08:37:50,987 [Worker-1018: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:39:11,676 [Worker-1018: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:39:11,690 [Worker-1018: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 08:39:11,702 [Worker-1018: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:39:26,559 [Worker-1022: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:39:26,571 [Worker-1022: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 08:39:26,578 [Worker-1022: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:40:56,885 [Worker-1018: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:40:56,898 [Worker-1018: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 08:40:56,910 [Worker-1018: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:48:57,622 [Worker-1028: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:48:57,635 [Worker-1028: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 08:48:57,645 [Worker-1028: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:49:00,733 [Worker-1026: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 08:49:00,800 [Worker-1026: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 33 resources from src\main\resources to target\classes
+2024-01-28 08:49:00,832 [Worker-1026: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:50:19,899 [Worker-1026: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 08:50:19,933 [Worker-1026: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 33 resources from src\main\resources to target\classes
+2024-01-28 08:50:19,969 [Worker-1026: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 08:56:28,388 [Worker-1026: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 08:56:28,398 [Worker-1026: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 08:56:28,406 [Worker-1026: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 09:01:35,669 [Worker-1038: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 09:01:35,679 [Worker-1038: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 09:01:35,687 [Worker-1038: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 09:02:15,800 [Worker-1035: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 09:02:15,810 [Worker-1035: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 09:02:15,817 [Worker-1035: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 09:06:27,578 [Worker-1042: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 09:06:27,591 [Worker-1042: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 09:06:27,601 [Worker-1042: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 09:07:42,180 [Worker-1043: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 09:07:42,492 [Worker-1043: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 33 resources from src\main\resources to target\classes
+2024-01-28 09:07:42,535 [Worker-1043: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 09:13:28,427 [Worker-1049: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 09:13:28,437 [Worker-1049: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 09:13:28,445 [Worker-1049: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 09:15:34,149 [Worker-1038: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 09:15:34,181 [Worker-1038: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 33 resources from src\main\resources to target\classes
+2024-01-28 09:15:34,210 [Worker-1038: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 09:16:05,156 [Worker-1049: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 09:16:05,420 [Worker-1049: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 33 resources from src\main\resources to target\classes
+2024-01-28 09:16:05,462 [Worker-1049: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 09:19:37,523 [Worker-1052: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 09:19:37,534 [Worker-1052: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 09:19:37,543 [Worker-1052: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 09:20:35,008 [Worker-1046: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 09:20:35,020 [Worker-1046: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 09:20:35,027 [Worker-1046: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 09:21:03,332 [Worker-1038: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-28 09:21:03,345 [Worker-1038: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 09:21:03,353 [Worker-1038: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 09:24:53,991 [Worker-1055: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 09:24:54,017 [Worker-1055: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 33 resources from src\main\resources to target\classes
+2024-01-28 09:24:54,041 [Worker-1055: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 09:26:14,587 [Worker-1055: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-28 09:26:14,619 [Worker-1055: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 33 resources from src\main\resources to target\classes
+2024-01-28 09:26:14,648 [Worker-1055: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\cubeo\Desktop\プログラミング\SAMURAI\模擬案件\kadai_002\nagoyameshi\src\test\resources
+2024-01-28 09:28:46,126 [Worker-1058: ビルド] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes

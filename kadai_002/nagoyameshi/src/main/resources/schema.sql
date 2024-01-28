@@ -12,7 +12,8 @@ CREATE TABLE IF NOT EXISTS shop (
      opening_time TIME NOT NULL,
      closing_time TIME NOT NULL,
      created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-     updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+     updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+     FOREIGN KEY (category_id) REFERENCES category (id)
  );
  
  CREATE TABLE IF NOT EXISTS category (
@@ -74,4 +75,17 @@ CREATE TABLE IF NOT EXISTS shop (
      UNIQUE (shop_id, user_id),
      FOREIGN KEY (shop_id) REFERENCES shop (id),
      FOREIGN KEY (user_id) REFERENCES users (id)  
+ );
+ 
+ CREATE TABLE IF NOT EXISTS reviews (
+     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+     shop_id INT NOT NULL,
+     user_id INT NOT NULL,
+     score INT NOT NULL,
+     content TEXT NOT NULL,    
+     created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+     updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+     UNIQUE (shop_id, user_id),
+     FOREIGN KEY (shop_id) REFERENCES shop (id),
+     FOREIGN KEY (user_id) REFERENCES users (id) 
  );
