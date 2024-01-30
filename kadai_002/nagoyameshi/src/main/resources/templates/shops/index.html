@@ -53,7 +53,7 @@
                                  <div class="card-body">
                                      <form method="get" th:action="@{/shops}" class="w-100">
                                          <div class="form-group mb-3">    
-                                             <select class="form-control form-select" name="price">
+                                             <select class="form-control form-select" name="category">
                                                  <option value="" hidden>選択してください</option> 
                                                  <option th:each="category : ${category}" th:value="${category.getId()}" th:selected="${categoryId == category.getId()}" th:text="${category.getName()}"></option>
                                              </select>                                                                                

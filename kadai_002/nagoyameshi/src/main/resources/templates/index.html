@@ -61,7 +61,11 @@
                              
                              <ul class="table">
 								 <li>
+									 <!--
 									 <a th:each="category : ${category}" th:href="@{/shops?category = ${category.getId()}}" th:text="${category.getName}" class="me-2"></a>
+									 -->
+									 <a th:each="category : ${category}" th:href="@{/shops(category=${category.getId()})}" th:text="${category.getName()}" class="me-2"></a>
+									 
 								 </li>	 
 							 </ul>
                          </div>
