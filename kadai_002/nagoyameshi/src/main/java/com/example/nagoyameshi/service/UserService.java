@@ -74,4 +74,14 @@ public class UserService {
         User currentUser = userRepository.getReferenceById(userEditForm.getId());
         return !userEditForm.getEmail().equals(currentUser.getEmail());      
     }
+    
+    public void prosessSessionComplete(User user) {
+    	user.getRole().setId(2);
+    	userRepository.save(user);
+    }
+    
+    public void prosessSessionFailed(User user) {
+    	user.getRole().setId(1);
+    	userRepository.save(user);
+    }
 }

@@ -1,0 +1,60 @@
+package com.example.nagoyameshi.controller;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
+
+import com.example.nagoyameshi.entity.User;
+import com.example.nagoyameshi.security.UserDetailsImpl;
+import com.example.nagoyameshi.service.StripeService;
+import com.example.nagoyameshi.service.UserService;
+import com.stripe.Stripe;
+import com.stripe.exception.SignatureVerificationException;
+import com.stripe.model.Event;
+import com.stripe.net.Webhook;
+
+@Controller
+public class StripeWebhookController {
+	private final StripeService stripeService;
+	private final UserService userService;
+	
+	@Value("${stripe.api-key}")
+	private String stripeApiKey;
+	
+	@Value("${stripe.webhook-secret}")
+	private String webhookSecret;
+	
+	public StripeWebhookController(StripeService stripeService, UserService userService) {
+		this.stripeService = stripeService;
+		this.userService = userService;
+	}
+	
+	@PostMapping("/stripe/webhook")
+	public ResponseEntity<String> webhook(@RequestBody String payload, @RequestHeader("Stripe-Signature") String sigHeader, UserDetailsImpl userDetailsImpl){
+		Stripe.apiKey = stripeApiKey;
+		Event event = null;
+		User user = userDetailsImpl.getUser();
+		
+		try {
+            event = Webhook.constructEvent(payload, sigHeader, webhookSecret);
+        } catch (SignatureVerificationException e) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+        }
+		
+		switch (event.getType()) {
+			case "checkout.session.completed":
+				userService.prosessSessionComplete(user);
+				break;
+			
+			case "invoice.payment_failed":
+				userService.prosessSessionFailed(user);
+				break;
+		}
+		
+		return new ResponseEntity<>("Success", HttpStatus.OK);
+	}
+}
