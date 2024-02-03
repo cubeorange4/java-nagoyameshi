@@ -27,8 +27,10 @@ public class StripeService {
                                 SessionCreateParams.LineItem.builder()
                                 	.setPrice(priceId)
                                 	.build())
-                        .build();
         				.setMode(SessionCreateParams.Mode.SUBSCRIPTION)
+        				.setSuccessUrl("")
+                        .setCancelUrl("")
+                        .build();
 
         try {
             Session session = Session.create(params);
