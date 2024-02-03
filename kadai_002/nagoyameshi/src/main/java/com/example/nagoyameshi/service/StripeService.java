@@ -14,10 +14,13 @@ import jakarta.servlet.http.HttpServletRequest;
 public class StripeService {
     @Value("${stripe.api-key}")
     private String stripeApiKey;
+    
+    @Value("${stripe.premium-plan-id}")
+    private String stripePriceId;
 
     public String createStripeSession(HttpServletRequest httpServletRequest) {
         Stripe.apiKey = stripeApiKey;
-        String priceId = "{{price_1Oe6OWA78AZNO6DHoBpANHHM}}";
+        String priceId = stripePriceId;
 
         String requestUrl = new String(httpServletRequest.getRequestURL());
         SessionCreateParams params =
@@ -28,8 +31,8 @@ public class StripeService {
                                 	.setPrice(priceId)
                                 	.build())
         				.setMode(SessionCreateParams.Mode.SUBSCRIPTION)
-        				.setSuccessUrl("")
-                        .setCancelUrl("")
+        				.setSuccessUrl("/")
+                        .setCancelUrl("/")
                         .build();
 
         try {
