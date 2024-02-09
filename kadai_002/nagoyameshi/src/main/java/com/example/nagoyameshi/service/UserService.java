@@ -1,5 +1,12 @@
 package com.example.nagoyameshi.service;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -55,6 +62,29 @@ public class UserService {
         userRepository.save(user);
     }
     
+    @Transactional
+    public void createStripeId(User user, String stripeId) {
+        user.setStripeId(stripeId);        
+        userRepository.save(user);
+    }
+    
+    @Transactional
+    public void updateRole(User user, String roleName) {
+        Role role = roleRepository.findByName(roleName);
+        user.setRole(role);
+        userRepository.save(user);
+    }
+    
+    public void refreshAuthenticationByRole(String newRole) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+        List<SimpleGrantedAuthority> authorities = new ArrayList<>();
+        authorities.add(new SimpleGrantedAuthority(newRole));
+        Authentication newAuth = new UsernamePasswordAuthenticationToken(authentication.getPrincipal(), authentication.getCredentials(), authorities);
+
+        SecurityContextHolder.getContext().setAuthentication(newAuth);
+    }
+    
     public boolean isEmailRegistered(String email) {
         User user = userRepository.findByEmail(email);  
         return user != null;
@@ -73,15 +103,5 @@ public class UserService {
     public boolean isEmailChanged(UserEditForm userEditForm) {
         User currentUser = userRepository.getReferenceById(userEditForm.getId());
         return !userEditForm.getEmail().equals(currentUser.getEmail());      
-    }
-    
-    public void prosessSessionComplete(User user) {
-    	user.getRole().setId(2);
-    	userRepository.save(user);
-    }
-    
-    public void prosessSessionFailed(User user) {
-    	user.getRole().setId(1);
-    	userRepository.save(user);
     }
 }

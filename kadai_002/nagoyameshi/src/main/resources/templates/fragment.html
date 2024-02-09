@@ -52,7 +52,7 @@
          
                                  <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownGeneral"> 
 									 <a class="dropdown-item samuraitravel-dropdown-item" th:href="@{/user}">会員情報</a> 
-									 <a class="dropdown-item samuraitravel-dropdown-item" th:href="@{/membership}">有料会員の登録</a>
+									 <a class="dropdown-item samuraitravel-dropdown-item" th:href="@{/membership/register}">有料会員の登録</a>
                                      
                                      <div class="dropdown-divider"></div>
                                      <a class="dropdown-item samuraitravel-dropdown-item" th:href="@{/logout}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -71,7 +71,9 @@
                                  <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownGeneral">
 									 <a class="dropdown-item samuraitravel-dropdown-item" th:href="@{/user}">会員情報</a>  
 									 <a class="dropdown-item samuraitravel-dropdown-item" th:href="@{/reservations}">予約一覧</a>
-									 <a class="dropdown-item samuraitravel-dropdown-item" th:href="@{/favorites}">お気に入り一覧</a> 
+									 <a class="dropdown-item samuraitravel-dropdown-item" th:href="@{/favorites}">お気に入り一覧</a>
+									 <a class="dropdown-item samuraitravel-dropdown-item" th:href="@{/membership/edit}">支払い方法の変更</a> 
+									 <a class="dropdown-item samuraitravel-dropdown-item" th:href="@{/membership/cancel}">有料会員の解約</a> 
                                      
                                      <div class="dropdown-divider"></div>                                                                  
                                      <a class="dropdown-item samuraitravel-dropdown-item" th:href="@{/logout}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">

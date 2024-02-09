@@ -46,6 +46,9 @@ public class User {
     @JoinColumn(name = "role_id")
     private Role role;   
     
+    @Column(name = "stripe_id")
+    private String stripeId;
+    
     @Column(name = "enabled")
     private Boolean enabled;
     
