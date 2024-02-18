@@ -101,3 +101,6 @@ INSERT IGNORE INTO reviews (id, shop_id, user_id, score, content) VALUES (9, 1, 
 INSERT IGNORE INTO reviews (id, shop_id, user_id, score, content) VALUES (10, 1, 10, 5, 'Wi-Fiが快適で助かりました。');
 INSERT IGNORE INTO reviews (id, shop_id, user_id, score, content) VALUES (11, 1, 11, 4, '清潔感があり、気持ちよく滞在できました。');
 INSERT IGNORE INTO reviews (id, shop_id, user_id, score, content) VALUES (12, 1, 12, 5, '部屋が広く、ゆったり過ごせました。');
+
+INSERT IGNORE INTO companies (id, name, postal_code, address, representative, fouding_date, total_assets, business, number_of_employees) VALUES
+(1, 'NAGOYAMESHI', '2837465', '東京都千代田区神田練塀町300番地 住友不動産秋葉原駅前ビル5F', '侍 太郎', '2012年3月4日', '110,000千円', '飲食店等の情報提供サービス', '100名');

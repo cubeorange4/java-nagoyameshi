@@ -1,0 +1,34 @@
+package com.example.nagoyameshi.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.example.nagoyameshi.repository.ReservationRepository;
+import com.example.nagoyameshi.repository.ShopRepository;
+import com.example.nagoyameshi.repository.UserRepository;
+import com.example.nagoyameshi.service.StripeService;
+
+@Controller
+@RequestMapping
+public class AdminHomeController {
+	private final UserRepository userRepository;
+    private final ShopRepository shopRepository;
+    private final ReservationRepository reservationRepository;
+    private final StripeService stripeService;
+    
+    public AdminHomeController(UserRepository userRepository, ShopRepository shopRepository, ReservationRepository reservationRepository, StripeService stripeService) {
+    	this.userRepository = userRepository;
+    	this.shopRepository = shopRepository;
+    	this.reservationRepository = reservationRepository;
+    	this.stripeService = stripeService;
+    }
+    
+    @GetMapping
+    public String index(Model model) {
+    	
+    	
+    	return "admin/index";
+    }
+}

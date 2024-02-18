@@ -89,3 +89,17 @@ CREATE TABLE IF NOT EXISTS shop (
      FOREIGN KEY (shop_id) REFERENCES shop (id),
      FOREIGN KEY (user_id) REFERENCES users (id) 
  );
+ 
+ CREATE TABLE IF NOT EXISTS companies (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    postal_code VARCHAR(50) NOT NULL,
+    address VARCHAR(255) NOT NULL,  
+    representative VARCHAR(50) NOT NULL,
+    fouding_date VARCHAR(50) NOT NULL,
+    total_assets VARCHAR(50) NOT NULL,
+    business VARCHAR(255) NOT NULL,
+    number_of_employees VARCHAR(50) NOT NULL,  
+    created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
